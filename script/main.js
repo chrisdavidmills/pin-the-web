@@ -1,11 +1,16 @@
 var metaInfo = document.querySelector('head').innerHTML;
-var myPre = document.querySelector('pre');
+var preNodes = [].slice.call(document.querySelectorAll("pre"));
+var themeColor = document.querySelector('meta[name="theme-color"]').getAttribute('content');
 
 var metaNodes = metaInfo.split('\n');
 
 for(i = 0; i < metaNodes.length; i++) {
   if(i > 4) {
   	var stripped = metaNodes[i].trim();
-    myPre.textContent += stripped + '\n';
+    preNodes[0].textContent += stripped + '\n';
   }
 }
+
+preNodes.forEach(function(value) {
+  value.style.backgroundColor = themeColor;
+})

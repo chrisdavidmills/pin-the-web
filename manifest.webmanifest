@@ -1,0 +1,13 @@
+{
+   "name": "My sample app",
+   "short_name": "App",
+   "icons": [
+     {
+        "src": "pin.png",
+        "sizes": "64x64",
+        "type": "image/png",
+     }
+   ],
+   "start_url": "/full-site/index.html",
+   "scope": "/myapp/"
+ }

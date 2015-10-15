@@ -26,3 +26,38 @@ img {
   margin: 10px auto;
   border: 1px solid black;
 }
+
+
+/* navigation menu on the full site example */
+
+.nav {
+  padding-left: 0;
+  display: flex;
+  flex-flow: row;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  flex: 1;
+}
+
+.nav a {
+  color: #6377f4;
+}
+
+.nav a, .nav div {
+	width: 100%;
+	line-height: 1.5;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+}
+
+.nav a:hover {
+	text-decoration: none;
+}
+
+.nav a:active {
+	font-weight: bold;
+}

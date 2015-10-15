@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pin the Web: site with web manifest</title>
+    <link rel="stylesheet" href="../style/main.css">
+
+    <link rel="icon" type="image/png" href="../pin.png" sizes="64x64">
+    <meta name="description" content="Pin the Web">
+    <meta name="theme-color" content="#ff413c">
+    <link rel="manifest" href="../manifest.webmanifest"> 
+  </head>
+
+  <ul class="nav">
+    <li><div>Site landing page</div></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+  </ul>
+
+  <body>
+    <h1>Pin the Web: site with web manifest</h1>
+
+    <p>This is a complete site made up of multiple pages, associated together and given shared attributes using Firefox OS's new support for the <a href="">W3C Manifest for a web application</a> specification. You can see other examples at our <a href="../rdfa/index.html">RDFa</a> and <a href="../index.html">Basic landing page</a> pages.</p>
+
+    <p>You can find out more at <a href="">Pin the Web</a> on <a href="https://developer.mozilla.org/en-US/">MDN</a>.</p>
+
+
+
+    <h2>Metadata on this page</h2>
+
+<pre>
+      
+</pre>
+
+    <h2>Manifest file contents</h2>
+
+<pre>
+
+{
+  "name": "My sample app",
+  "short_name": "App",
+  "icons": [
+    {
+       "src": "pin.png",
+       "sizes": "64x64",
+       "type": "image/png",
+    }
+  ],
+  "start_url": "/full-site/index.html",
+  "scope": "/myapp/"
+}
+
+</pre>
+
+
+     
+     <p>Icon by Dawghouse Design Studio, hosted on <a href="http://findicons.com/icon/222122/pin?id=381856">findicons.com</a>.</p>
+  </body>
+  <script src="../script/main.js"></script>
+</html>
